@@ -1,7 +1,107 @@
-html {
-  background: #eee;
+@import 'variables';
+@import 'reset';
 
-  #app {
-    color: red;
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  height: 36px;
+  min-width: 64px;
+  padding: 0 16px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 8px;
+
+  h1 {
+    font-size: 25px;
+    font-weight: lighter;
+    color: $text-color; 
   }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.main {
+  background: $secondary-color;
+  width: 100%;
+  padding: 30px 0 45px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 1070px;
+  margin: 0 auto;
+  color: $primary-color;
+
+  .input-container {
+    margin: 10px 0;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: lighter;
+  }
+
+  input {
+    width: calc(100% - 32px);
+    max-width: 550px;
+    height: 36px;
+    margin-right: 20px;
+    padding: 0 16px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 36px;
+    vertical-align: middle;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+  }
+
+  button {
+    background: $primary-color;
+    color: $button-color;
+  }
+}
+
+.tagline {
+  font-size: 14px;
+}
+
+.response {
+  width: 100%;
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 30px 0;
+  color: $text-color;
+
+  button {
+    background: $button-color;
+    color: $primary-color;
+    margin-left: 20px;
+    position: relative;
+  }
+}
+
+.copy-tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, .7);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -110%);
+  font-size: 10px;
+  padding: 5px;
 }
