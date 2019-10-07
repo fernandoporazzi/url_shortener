@@ -28,7 +28,7 @@ This will create a server listening on port 3000.
 
 At this point, you can play around with the application using Postman or a similar service.
 
-Nos, you can go to the static folder and run:
+Now, you can go to the static folder and run:
 
 - `$ npm i`
 - `$ npm start`
